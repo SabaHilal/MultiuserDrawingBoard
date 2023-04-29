@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="10">
+    <title>Drawing Board</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase.js"></script>
+
+
+     <script>
+     
+      var firebaseConfig = {
+   
+    apiKey: "AIzaSyBANFcKqmHOEZoj7bYs7BW38p6WOlq3xZc",
+    authDomain: "drawtogether-e9789.firebaseapp.com",
+    databaseURL: "https://drawtogether-e9789-default-rtdb.firebaseio.com",
+    projectId: "drawtogether-e9789",
+    storageBucket: "drawtogether-e9789.appspot.com",
+    messagingSenderId: "234710941374",
+    appId: "1:234710941374:web:a07a3d124763bedb2168ef"
+  };
+   
+      
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <center>
+    <h2>Multi Player Art Draw</h2>  
+    <div id="canvascontainer">
+      <script src="sketch.js"></script>
+  </div>
+  <p>
+   
+      <button id="clearbutton">Clear The Canvas</button>
+      <button id="downloadbutton">Download</button>
+        
+  </p>
+</center>
+</html>
